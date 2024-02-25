@@ -55,7 +55,7 @@ class _LoginScreenState extends State<LoginScreen> {
     return Scaffold(
       appBar: AppBar(
         centerTitle: true,
-        title: const Text('Login'),
+        title: const Text('Log in'),
         backgroundColor: Colors.indigo,
       ),
       body: Form(
@@ -114,7 +114,7 @@ class _LoginScreenState extends State<LoginScreen> {
               ),
               const SizedBox(height: 16),
               ElevatedButton(
-                child: Text('Login'),
+                child: Text('Log in'),
                 onPressed: loginUser,
               ),
               Text(userEmail),
