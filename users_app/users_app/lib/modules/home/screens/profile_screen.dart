@@ -18,7 +18,7 @@ class _ProfileScreenState extends State<ProfileScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Profile'),
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.indigo,
       ),
       body: Center(
         child: Column(
@@ -36,16 +36,17 @@ class _ProfileScreenState extends State<ProfileScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 ElevatedButton(
-                  onPressed: Provider.of<HomeProvider>(context).incrementCounter,
+                  onPressed:
+                      Provider.of<HomeProvider>(context).incrementCounter,
                   child: Text('Increment'),
                 ),
                 SizedBox(width: 16),
                 ElevatedButton(
-                  onPressed: Provider.of<HomeProvider>(context).decrementCounter,
+                  onPressed:
+                      Provider.of<HomeProvider>(context).decrementCounter,
                   child: Text('Decrement'),
                 ),
-              ]
-              ,
+              ],
             ),
           ],
         ),

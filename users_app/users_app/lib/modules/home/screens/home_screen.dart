@@ -15,7 +15,7 @@ class _HomeScreenState extends State<HomeScreen> {
     return Scaffold(
       appBar: AppBar(
         title: Text('Projects'),
-        backgroundColor: Colors.amber,
+        backgroundColor: Colors.indigo,
         actions: [
           IconButton(
             onPressed: () {
@@ -25,7 +25,10 @@ class _HomeScreenState extends State<HomeScreen> {
                 ),
               );
             },
-            icon: Icon(Icons.person),
+            icon: Icon(
+              Icons.person,
+              color: Colors.black,
+            ),
           ),
         ],
       ),
